@@ -24,3 +24,7 @@ zip -r bootstrap.zip bootstrap .env
 done
 
 
+```sh
+
+curl -X POST -H "Content-Type: application/json" -d '{"temperature": 105}' https://gzdavjn3b3cgqvqjcbtylasx6u0ffwie.lambda-url.ap-south-1.on.aws/
+```

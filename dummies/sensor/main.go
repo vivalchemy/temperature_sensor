@@ -20,7 +20,7 @@ type WSMessage struct {
 
 func main() {
 	// Connect to WebSocket server
-	url := "ws://localhost:8080/ws" // Replace with your WebSocket server URL
+	url := "ws://13.127.255.108:8080/ws" // Replace with your WebSocket server URL
 	conn, _, err := websocket.DefaultDialer.Dial(url, nil)
 	if err != nil {
 		log.Fatal("Error connecting to WebSocket:", err)

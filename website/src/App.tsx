@@ -8,8 +8,9 @@ import { Badge } from "./components/ui/badge";
 import { Button } from "./components/ui/button";
 import { Tabs, TabsTrigger, TabsList } from "./components/ui/tabs";
 
-const STATS_URL = "http://localhost:8000/stats";
-const WEBSOCKET_URL = "ws://localhost:8080/ws";
+// Replace your hardcoded constants with these lines
+const STATS_URL = import.meta.env.VITE_STATS_URL;
+const WEBSOCKET_URL = import.meta.env.VITE_WEBSOCKET_URL;
 
 // TypeScript interfaces for our data
 interface TimeSeriesPoint {
